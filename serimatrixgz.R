@@ -4,7 +4,7 @@ library(janitor)
 # -----------------------------
 # 1) Lire directement le fichier .gz
 # -----------------------------
-file <- "GSE4412-GPL97_series_matrix.txt.gz"
+file <- "GSE132654_series_matrix.txt.gz"
 raw  <- readLines(gzfile(file))
 
 # -----------------------------
@@ -99,4 +99,3 @@ pheno
 
 
 write.csv(pheno,file="pheno.csv",row.names=F)
-
